@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Docker | Introduction to Docker | by Pramati Technologies</title>
+    
+    <meta name="description" content="Docker Introduction to Docker | by Pramati Technologies." />
+    <meta name="author" content="http://www.pramati.com/" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="assets/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+    <!-- fallback message if js is not found or not supported by browser -->
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+        <!-- slide-1 starts -->
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+            <span class="try">Introduction to Docker</span>
+            <h1>Docker 101<sup>*</sup></h1>
+            <span class="footnote">
+                <sup>*</sup>
+                Build, Ship, and Run Anywhere
+            </span>
+            <div>
+                <div class="div_left">
+                    <img src="assets/logo_pramati_trans_152.png" alt="http://www.pramati.com/">
+                </div>
+
+                <div class="div_right">
+                    <img src="assets/docker.png" alt="http://www.docker.com/">  
+                </div>
+            </div>
+        </div>
+        <!-- slide-1 ends -->
+
+        <!-- slide-2 starts -->
+        <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+            <h2 class="h2_title">Agenda</h2>
+            <div class="div_margin50">
+                <ul>
+                    <li>What is Container </li>
+                    <li>Container vs Virtual Machine</li>
+                    <li>What is Docker</li>
+                    <li>Docker CLi</li>
+                    <li>Docker Architecture</li>
+                    <li>Docker Installation</li>
+                    <li>Docker Platform Workﬂow </li>
+                    <li>Docker Build AND Run Commands </li>
+                </ul>
+            </div>
+        </div>
+        <!-- slide-2 ends -->
+
+        <!-- slide-3 starts -->
+        <!-- Containers are a way to package software in a format that can run isolated on a shared operating system. Unlike VMs, containers do not bundle a full operating system - only libraries and settings required to make the software work are needed. This makes for efficient, lightweight, self-contained systems and guarantees that software will always run the same, regardless of where it’s deployed. -->
+        <div id="containers" class="step" data-x="850" data-y="3500" data-rotate="90" data-scale="5">
+            <p>A <strong>Containers</strong> image is a lightweight,<br/>
+            stand-alone, executable package of a piece of software that  <br/>
+            includes everything needed to run it: code, runtime, system tools, system libraries, settings</p>
+        </div>
+        <!-- slide-3 ends -->
+        <div id="why_docker" class="step slide" data-x="0" data-y="-1500">
+            <h2 class="h2_title">Why Docker</h2>
+            <div class="div_margin50">
+                <ul>
+                    <li>Isolation </li>
+                    <li>Lightweight</li>
+                    <li>Simplicity</li>
+                    <li>Workflow</li>
+                    <li>Community</li>
+                </ul>
+            </div>
+        </div>
+        <!-- slide-4 starts -->
+        <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale=".5">
+            <p>and <b>tiny</b> ideas</p>
+            <img src="assets/container_vs_vm.jpg" alt="container_vs_vm.jpg">  
+        </div>
+        <!-- slide-4 ends -->
+
+        <!-- slide-5 starts -->
+
+        <!-- Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package. By doing so, thanks to the container, the developer can rest assured that the application will run on any other Linux machine regardless of any customized settings that machine might have that could differ from the machine used for writing and testing the code. -->
+        <div id="ing" class="step" data-x="3800" data-y="-850" data-rotate="270" data-scale="6">
+            <p>
+                <b class="positioning">Docker</b>
+                <br>is a tool designed to make it easier to <br>
+                <b class="rotating">create,</b>
+                <b class="rotating">deploy,</b> <br> and
+                <b class="rotating">run applications</b> by using containers
+            </p>
+        </div>
+        <!-- slide-5 ends -->
+
+        <!-- slide-6 starts -->
+        <div id="architecture" class="step" data-x="1000" data-y="1500" data-z="-3000" data-rotate="300" data-scale="1">
+            <p>Docker <b>Architecture</b></p>
+            <img src="assets/architecture.svg" alt="Architecture">
+        </div>
+        <!-- slide-6 ends -->
+
+        <!-- slide-7 starts -->
+        <div class="step slide" data-x="1000" data-y="-1500">
+            <h2 class="h2_title">Docker CLI</h2>
+            <div class="div_margin50">
+                <ul>
+                    <li>docker build  &nbsp; &nbsp; &nbsp;  # Build an image from a Dockerﬁle</sup> </li>
+                    <li>docker images &nbsp; # List all images on a Docker host</li>
+                    <li>docker run &nbsp; &nbsp; &nbsp; &nbsp; # Run an image</li>
+                    <li>docker ps &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # List all containers</li>
+                    <li>docker stop &nbsp; &nbsp; &nbsp; # Stop a containers</li>
+                    <li>docker rm &nbsp; &nbsp; &nbsp; &nbsp; # Remove an containers</li>
+                    <li>docker rmi &nbsp; &nbsp; &nbsp; &nbsp;# Remove an image</li>
+                </ul>
+            </div>
+        </div>
+        <!-- slide-7 ends -->
+
+        <!-- slide-8 starts -->
+        <div class="step" data-x="2000" data-y="-1500" data-z="-5000" data-rotate="300">
+            <h1>Docker Workflow</h1>
+        </div>
+
+        <div class="step" data-x="6000" data-y="-1500" data-z="-4000">
+            <p>Find an Image on Docker Hub</p>
+            <strong><code>docker search ubuntu</code></strong>
+        </div>
+        <!-- slide-8 ends -->
+
+        <!-- slide-9 starts -->
+        <div class="step" data-x="6500" data-y="-1500" data-z="-5000">
+            <p>Pull an Image from Docker Hub</p>
+            <strong><code>docker pull ubuntu</code></strong>
+            <br><code>docker images</code>
+            <br><code>docker history ubuntu</code>
+        </div>
+        <!-- slide-9 ends -->
+
+        <!-- slide-10 starts -->
+        <div class="step" data-x="7000" data-y="-1500" data-z="-6000">
+            <p>Run an Image on Docker Host</p>
+            <strong><code>cid=$(docker run -itd ubuntu)</code></strong>
+            <br><code>echo $cid</code>
+            <br><code>docker ps</code>
+        </div>
+        <!-- slide-10 ends -->
+
+        <!-- slide-11 starts -->
+        <div class="step" data-x="7500" data-y="-1500" data-z="-7000">
+            <p>Stop an Container</p>
+            <strong><code>docker stop $cid</code></strong>
+        </div>
+        <!-- slide-11 ends -->
+
+        <!-- slide-12 starts -->
+        <div class="step" data-x="8000" data-y="-1500" data-z="-8000">
+            <p>Remove an Container</p>
+            <strong><code>docker rm $cid</code></strong>
+        </div>
+        <!-- slide-12 ends -->
+
+        <!-- slide-13 starts -->
+        <div class="step" data-x="8500" data-y="-1500" data-z="-9000">
+            <p>Remove an Image</p>
+            <strong><code>docker rmi ubuntu</code></strong>
+            <br><code>docker images</code>
+        </div>
+        <!-- slide-13 ends -->
+        
+        <!-- slide-14 starts -->
+        <div class="step" data-x="9000" data-y="-1500" data-scale='1'>
+            <h1>Thank YOU<sup>*</sup></h1>
+        </div>
+        <!-- slide-14 ends -->
+
+        <!-- slide- starts -->
+        <!-- slide- ends -->
+    </div>
+    <!-- div impress ends -->
+
+    <script src="assets/impress.js"></script>
+    <script>impress().init();</script>
+</body>
+
+</body>
+</html>
